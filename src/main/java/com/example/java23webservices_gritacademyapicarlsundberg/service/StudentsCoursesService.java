@@ -21,10 +21,7 @@ public class StudentsCoursesService {
 
     @Autowired
     StudentsCoursesRepository studentsCoursesRepository;
-    @Autowired
-    StudentsRepository studentsRepository;
-    @Autowired
-    CoursesRepository coursesRepository;
+
 
     public List<StudentsCoursesDTO> getAllStudentsCourses() {
         return studentsCoursesRepository.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
