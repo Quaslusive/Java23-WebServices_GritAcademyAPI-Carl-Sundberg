@@ -1,4 +1,6 @@
-StudentsController
+<h1>    Java23-WebServices_GritAcademyAPI-Carl-Sundberg</h1>
+
+<h2>StudentsController</h2>
 GET /students
 Retrieves all students.
  
@@ -15,7 +17,7 @@ Retrieves students by last name.
 GET /students/town/{town}
 Retrieves students by town.
 
-CoursesController
+<h2>CoursesController</h2>
 GET /courses
 Retrieves all courses.
 
@@ -28,7 +30,7 @@ Retrieves courses by name.
 GET /courses/des/{description}
 Retrieves courses by description.
    
-StudentsCoursesController
+<h2>StudentsCoursesController</h2>
 GET /studentscourses
 Retrieves all student courses.
   
