@@ -30,14 +30,7 @@ public class StudentsCoursesService {
     public StudentsCoursesDTO getStudentsCoursesById(Long id) {
         return studentsCoursesRepository.findById(id).map(this::mapToDTO).orElse(null);
     }
-    private StudentsDTO mapStudentsToDTO(Students student) {
-        StudentsDTO dto = new StudentsDTO();
-        dto.setId(student.getId());
-        dto.setFName(student.getFName());
-        dto.setLName(student.getLName());
-        dto.setTown(student.getTown());
-        return dto;
-    }
+
 
     private CoursesDTO mapToDTO(Courses course) {
         CoursesDTO dto = new CoursesDTO();
